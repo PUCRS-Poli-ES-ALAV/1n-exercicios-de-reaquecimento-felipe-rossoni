@@ -1,7 +1,10 @@
+def multiply(x, y):
+    if x == 0:
+        return 0
+    return y + multiply(x - 1, y)
+
 n1 = int(input('insira primeiro numero natural: '))
 n2 = int(input('insira segundo numero natural: '))
-r = 0
-for i in range(0, n1):
-    r += n2
 
-print(r)
+
+print(multiply(n1, n2))
