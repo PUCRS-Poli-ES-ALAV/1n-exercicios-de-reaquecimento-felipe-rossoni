@@ -1,7 +1,11 @@
 x = input('Insira string: ')
-y = ''
-i = len(x)
-while i:
-    i -= 1  
-    y += x[i]
-print(y)
+
+
+def reversing_string(string):
+    if (string == ""):
+        return ""
+    return reversing_string(string[1:]) + string[0]
+
+
+str = reversing_string(x)
+print(str)
